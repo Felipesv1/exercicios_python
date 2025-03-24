@@ -1,10 +1,12 @@
 
 
-def contagem_frequencia(strings):
+def contagem_frequencia (string):
     dicionario = {}
-    for string in strings:
-        if string in dicionario:
-            dicionario[string] += 1
+    palavras = string.split(" ")
+    for palavra in palavras:
+        if palavra in dicionario:
+            dicionario[palavra] += 1
         else:
-            dicionario[string] = 1
+            dicionario[palavra] = 1
     return dicionario
+        
